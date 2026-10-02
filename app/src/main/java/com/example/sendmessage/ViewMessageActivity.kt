@@ -50,7 +50,7 @@ class ViewMessageActivity : AppCompatActivity() {
     //region Ciclo de vida de una Actividad
     override fun onStart() {
         super.onStart()
-        Log.d(TAG, "ViewMessageActivity -> onCreate()")
+        Log.d(TAG, "ViewMessageActivity -> onStart()")
     }
 
     override fun onResume() {

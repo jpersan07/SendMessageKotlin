@@ -91,7 +91,7 @@ class SendMessageActivity : AppCompatActivity() {
     //region Ciclo de vida de una Actividad
     override fun onStart() {
         super.onStart()
-        Log.d(TAG, "SendMessageActivity -> onCreate()")
+        Log.d(TAG, "SendMessageActivity -> onStart()")
     }
 
     override fun onResume() {
