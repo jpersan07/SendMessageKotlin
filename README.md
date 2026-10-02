@@ -1,6 +1,6 @@
 # SendMessage
 
-> App Android en Kotlin para aprender a pasar datos entre dos `Activity`: escribes un mensaje en una pantalla y lo ves recibido en la otra.
+> App para Android en Kotlin para aprender a pasar datos entre dos `Activity`: escribes un mensaje en una pantalla y lo ves recibido en la otra.
 
 ![Kotlin](https://img.shields.io/badge/Kotlin-Android-7F52FF?logo=kotlin&logoColor=white)
 ![minSdk](https://img.shields.io/badge/minSdk-24-3DDC84?logo=android&logoColor=white)
