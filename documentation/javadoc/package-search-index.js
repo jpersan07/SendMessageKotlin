@@ -1,0 +1,1 @@
+var packageSearchIndex = [{"l":"com.example.sendmessage","url":"com/example/sendmessage/package-summary.html"}, {"l":"com.example.sendmessage.model","url":"com/example/sendmessage/model/package-summary.html"}, {"l":"All packages","url":"index.html"}]
