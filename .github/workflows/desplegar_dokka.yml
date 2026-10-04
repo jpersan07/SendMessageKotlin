@@ -1,0 +1,36 @@
+name: Desplegar Dokka en GitHub Pages
+
+on:
+  push:
+    branches: ["main"] # Se ejecuta cada vez que haces push a main
+  workflow_dispatch: # Permite lanzarlo a mano desde la pestaña Actions
+
+# Este flujo solo genera la documentación; la publicación la hace jekyll-gh-pages.yml
+permissions:
+  contents: read
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el código del repositorio
+        uses: actions/checkout@v4
+
+      # gradle/gradle-daemon-jvm.properties pide Java 25 para el daemon de Gradle
+      - name: Configurar Java 25
+        uses: actions/setup-java@v5
+        with:
+          distribution: 'temurin'
+          java-version: '25'
+
+      - name: Dar permisos de ejecución a Gradle
+        run: chmod +x gradlew
+
+      - name: Generar la documentación HTML y Javadoc con Dokka
+        run: ./gradlew dokkaGenerate
+
+      - name: Guardar la carpeta generada para que la publique Jekyll
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentacion-dokka
+          path: documentation
