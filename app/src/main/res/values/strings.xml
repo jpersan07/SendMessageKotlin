@@ -46,4 +46,5 @@
     <string name="enviar">Enviar</string>
     <string name="imageview">ImageView</string>
     <string name="textview">MENSAJE RECIBIDO\n</string>
+    <string name="message_received_icon">Mensaje recibido correctamente</string>
 </resources>

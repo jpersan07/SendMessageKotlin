@@ -8,7 +8,6 @@ import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sendmessage.model.Message
 import com.example.sendmessage.model.Person
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 /**
  * Launcher screen where the user types a message and sends it.
@@ -18,7 +17,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
  */
 
 /**
- * Esta es la primera actividad de la aplicacion que realiza las operaciones:
+ * Esta es la primera actividad de la aplicación que realiza las operaciones:
  * <ol>
  *     <li>Crear un componente <code>EditText</code> y <code>Button</code> en XML</li>
  *     <li>Lanza un evento en un componente visual</li>
@@ -46,8 +45,7 @@ class SendMessageActivity : AppCompatActivity() {
     /** Inflates `activity_send_message` and wires the send button to launch [ViewMessageActivity]. */
 
     /**
-     * Metodo de creacion de una actividad
-     * @param android.os.Bundle
+     * Método de creación de una actividad
      */
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,7 +68,7 @@ class SendMessageActivity : AppCompatActivity() {
     }
 
     /**
-     * Funcion que crea un mensaje con la informacion de la persona que envia y de la persona que recoge el mensaje
+     * Función que crea un mensaje con la información de la persona que envía y de la persona que recoge el mensaje
      */
     private fun sendMessage(){
         //1. Crear el intent
@@ -82,7 +80,7 @@ class SendMessageActivity : AppCompatActivity() {
         val receiver = Person("87654321B", "Juan", "Perez")
         val message = Message(1, etMessageText.text.toString(), sender, receiver)
 
-        bundle.putSerializable(ViewMessageActivity.KEY_MESSAGE, message)
+        bundle.putParcelable(ViewMessageActivity.KEY_MESSAGE, message)
         bundle.putString(ViewMessageActivity.KEY_SENDER, "${sender.name} ${sender.surname}")
         intent.putExtras(bundle)
         startActivity(intent)

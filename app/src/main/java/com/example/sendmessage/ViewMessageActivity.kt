@@ -5,6 +5,7 @@ import android.util.Log
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.IntentCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.sendmessage.model.Message
@@ -12,7 +13,12 @@ import com.example.sendmessage.model.Message
 /**
  * "Message received" screen, started from [SendMessageActivity].
  *
- * Reads the [KEY_MESSAGE] extra sent by the caller and shows it in `tvMessage`.
+ * **Reads the [KEY_MESSAGE] extra sent by the caller and shows it in `tvMessage`.**
+ *
+ * @author Jorge Peralta
+ * @version 1.0.0
+ *
+ * @see SendMessageActivity
  */
 class ViewMessageActivity : AppCompatActivity() {
 
@@ -38,8 +44,7 @@ class ViewMessageActivity : AppCompatActivity() {
             insets
         }
 
-        @Suppress("DEPRECATION")
-        val message = intent.getSerializableExtra(KEY_MESSAGE) as? Message
+        val message = IntentCompat.getParcelableExtra(intent, KEY_MESSAGE, Message::class.java)
         val tvMessage = findViewById<TextView>(R.id.tvMessage)
         tvMessage.text = message?.content
 
