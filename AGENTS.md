@@ -34,7 +34,7 @@ Después de cambiar código o recursos, comprueba que compila antes de dar el tr
 
 ## Requisitos de la práctica
 
-El enunciado completo está en `SendMessage.pdf` (no se sube al repositorio). Además del código, pide:
+El enunciado completo está en `SendMessage.pdf`, en la raíz del repositorio. Además del código, pide:
 
 - `README.md` con capturas de la app en el emulador, de Logcat y de `/data/data/` de la app, la explicación de la estructura y de las decisiones de diseño, y enlaces a Android Developers.
 - `CHANGELOG.md` con al menos las versiones v0.1 y v1.0.
