@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./build/**)",
+      "Read(./app/build/**)",
+      "Read(./.gradle/**)",
+      "Read(./.kotlin/**)",
+      "Read(./.cxx/**)",
+      "Read(./.externalNativeBuild/**)",
+      "Read(./captures/**)",
+      "Read(./.idea/**)",
+      "Read(./**/*.iml)",
+      "Read(./local.properties)",
+      "Read(./documentation/html/**)",
+      "Read(./documentation/javadoc/**)",
+      "Read(./**/*.apk)",
+      "Read(./**/*.aab)",
+      "Read(./app/release/**)",
+      "Read(./**/*.jks)",
+      "Read(./**/*.keystore)",
+      "Read(./**/*.ttf)",
+      "Read(./**/*.otf)",
+      "Read(./**/*.webp)",
+      "Read(./recursos/**)",
+      "Read(./app/src/main/res/drawable/corazoness.png)"
+    ]
+  }
+}

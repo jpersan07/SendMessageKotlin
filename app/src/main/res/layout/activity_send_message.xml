@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- fitsSystemWindows añade un relleno del alto de las barras del sistema para que el
+     título no quede debajo de la barra de estado (edge-to-edge obligatorio desde Android 15) -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:layout_margin="16dp"
+    android:layout_margin="@dimen/sendMessage_Margin"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvTittle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SMS APP"
+        android:text="@string/sms_app_title"
         android:fontFamily="@font/super_waffles"
         android:textSize="@dimen/tvTittle_TextSize"
         android:background="@color/cardview_shadow_start_color"
@@ -33,7 +36,7 @@
         android:id="@+id/btSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/btSend_MarginTop"
         android:text="@string/enviar"
         />
 

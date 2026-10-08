@@ -1,4 +1,14 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="tvTittle_TextSize">26sp</dimen>
+    <!-- Márgenes de la pantalla de envío (activity_send_message.xml) -->
+    <dimen name="sendMessage_Margin">16dp</dimen>
+    <dimen name="btSend_MarginTop">8dp</dimen>
+    <!-- Tamaños de la pantalla de recepción (activity_view_message.xml) -->
+    <dimen name="viewMessage_Margin">16dp</dimen>
+    <dimen name="textView_Width">370dp</dimen>
+    <dimen name="textView_Height">100dp</dimen>
+    <dimen name="tvMessage_TextSize">20sp</dimen>
+    <dimen name="tvSender_TextSize">18sp</dimen>
+    <dimen name="imageView_Size">200dp</dimen>
 </resources>

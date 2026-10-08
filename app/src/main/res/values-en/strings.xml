@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SendMessage</string>
+    <!-- Título de la pantalla de envío (SendMessageActivity) -->
+    <string name="sms_app_title">SMS APP</string>
+    <string name="message">Write your message here</string>
+    <string name="enviar">Send</string>
+    <string name="imageview">ImageView</string>
+    <string name="textview">MESSAGE RECEIVED\n</string>
+    <string name="message_received_icon">message received correctly</string>
+</resources>

@@ -11,10 +11,10 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="370dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/textView_Width"
+        android:layout_height="@dimen/textView_Height"
         android:text="@string/textview"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/viewMessage_Margin"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -23,9 +23,9 @@
         android:id="@+id/tvMessage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:textSize="20sp"
+        android:layout_marginStart="@dimen/viewMessage_Margin"
+        android:layout_marginEnd="@dimen/viewMessage_Margin"
+        android:textSize="@dimen/tvMessage_TextSize"
         app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -34,24 +34,24 @@
         android:id="@+id/tvSender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="18sp"
+        android:textSize="@dimen/tvSender_TextSize"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/tvMessage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="@dimen/viewMessage_Margin" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="@dimen/imageView_Size"
+        android:layout_height="@dimen/imageView_Size"
         android:src="@drawable/baseline_check_circle_24"
         android:contentDescription="@string/message_received_icon"
         android:scaleType="fitCenter"
         app:layout_constraintTop_toBottomOf="@id/tvSender"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="@dimen/viewMessage_Margin" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
